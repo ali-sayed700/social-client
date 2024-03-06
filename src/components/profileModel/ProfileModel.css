@@ -1,0 +1,78 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoEdit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.infoEdit > div {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  width: 90%;
+}
+
+.infoInEdit {
+  border: none;
+  outline: none;
+  background-color: var(--inputColor);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+}
+
+.infoButton {
+  width: 6rem;
+  height: 2rem;
+  align-self: flex-end;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0d45a5;
+}
+.choseimg {
+  height: fit-content;
+}
+
+.choseimg > div input {
+  margin-top: 0.5rem;
+}
+
+
+@media (max-width: 990px) {
+  .infoEdit {
+    gap: 1rem;
+  }
+  .infoEdit > div {
+    flex-direction: column;
+    height: auto;
+
+  }
+  .infoInEdit  {
+    padding: 10px;
+  }
+
+ 
+ }

@@ -1,0 +1,20 @@
+.itemSearch{
+    display: flex;
+    width: 17rem;
+    border-radius: 0rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+.itemSearch:hover {
+    background-color: var(--inputColor);
+}
+
+.itemSearch > img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .itemSearch li {
+    width: auto;
+  }

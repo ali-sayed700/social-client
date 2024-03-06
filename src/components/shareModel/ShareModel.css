@@ -1,0 +1,9 @@
+/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+
+.postModel .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.postModel .postShare {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

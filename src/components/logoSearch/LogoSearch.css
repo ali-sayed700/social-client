@@ -1,0 +1,48 @@
+.LogoSearch {
+  display: flex;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+  padding: .4rem;
+  border-radius: .5rem;
+  align-items: center;
+}
+
+.Search {
+  display: flex;
+  background-color:rgb(90 111 129 / 6%);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Search > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.s-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(106.23deg, #f99827, #f95f35 100%);
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+}
+
+.s-icon:hover {
+  cursor: pointer;
+}
+
+
+.overlaySearch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3d3c3c70;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}

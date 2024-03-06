@@ -1,0 +1,18 @@
+.home {
+  position: relative;
+  display: grid;
+  grid-template-columns: 18rem auto 15rem;
+  gap: 1rem;
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (max-width: 990px) {
+  .home {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .home .profileSide,
+  .home .rightSide {
+    display: none;
+  }
+}

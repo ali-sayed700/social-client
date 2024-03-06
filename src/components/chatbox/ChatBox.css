@@ -1,0 +1,156 @@
+.ChatBox-container {
+  background: var(--cardColor);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 18vh 72vh 9vh;
+  margin-top: 3.2rem;
+}
+
+
+
+.chat-header {
+  padding: 1rem 1rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  overflow: scroll;
+}
+
+.message {
+  background: var(--buttonBg);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 1rem 1rem 1rem 0;
+  max-width: 28rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.message > span:nth-child(2) {
+  font-size: 0.7rem;
+  color: var(--textColor);
+  align-self: end;
+}
+
+.own {
+  align-self: flex-end;
+  border-radius: 1rem 1rem 0 1rem;
+  background: linear-gradient(98.63deg, #24e4f0 0%, #358ff9 100%);
+}
+
+.chat-sender {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  height: 3.5rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  align-self: end;
+
+}
+.chat-sender > input {
+  height: 70%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+}
+.chat-sender > div:nth-of-type(1) {
+  background: rgb(233, 233, 233);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.chat-sender > div {
+  height: 70%;
+  padding: 0px 15px 0px 15px;
+}
+
+
+
+
+.previewImageChat{
+  position: absolute;
+    bottom: 16%;
+    width: 100%;
+    background: #0000009c;
+    padding: .3rem;
+    overflow: auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+
+.previewImageChat  .editimg ,.previewvideoChat  .editimg {
+  position: relative;
+  display: flex;
+  width: 10%;
+}
+
+.previewImageChat .editimg svg ,.previewvideoChat  .editimg svg {
+  position: absolute;
+  top: -3px;
+  right: -24px;
+ font-weight: bold;
+ cursor: pointer;
+ color: #fff;
+ z-index: 1;
+
+}
+
+.previewImageChat .editimg img {
+  object-fit: cover;
+  width: 5rem;
+}
+
+.chatImg {
+  /* object-fit: cover; */
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 17rem;
+justify-content: center;
+align-items: center;
+}
+
+.chatImg img {
+  flex: 1;
+  width: 45%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+.previewvideoChat {
+  position: absolute;
+  bottom: 16%;
+  width: 100%;
+  background: #0000009c;
+  padding: .3rem;
+  overflow: auto;
+  display: flex;
+  gap: 10rem;
+  flex-wrap: wrap;
+}

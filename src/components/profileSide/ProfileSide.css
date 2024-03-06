@@ -1,0 +1,15 @@
+.profileSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (max-width: 990px) {
+  .profileSide {
+    display: none;
+  }
+}

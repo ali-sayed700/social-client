@@ -1,0 +1,132 @@
+.navbar {
+    height: 50px;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    position: relative;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .iconImg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .counter {
+    width: 5px;
+    height: 5px;
+    color: red;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+  
+  .notifications {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #00000030;
+    color: black;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 40%;
+ 
+    margin: 0 5px;
+  }
+  
+  .notification {
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+margin: .5rem 0;
+background-color: aliceblue;
+font-size: 18px;
+padding: 0.3rem;
+  }
+  .notification img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right:  .3rem;
+  }
+
+  .notification p {
+    width: 85%;
+    text-wrap: wrap;
+    font-size: 18px;
+    margin: 0;
+  }
+  .nButton {
+    width: 35%;
+    padding: 5px;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  .noti {
+    /* position: absolute;
+    top: 5%;
+    left: 3%; */
+    /* background-color: var(--orange); */
+    /* width: 5rem; */
+    display: flex;
+    z-index: 15;
+  }
+
+/* Screen larger than 900px? 3 columns */
+@media (max-width: 990px) {
+  .notifications {
+    width: 90%;
+  }
+}
+
+
+/* Screen larger than 900px? 3 columns */
+@media (max-width: 990px) {
+  .notifications {
+    bottom: 50px ;
+    left: 50%;    
+    width: 90vw;
+    top: auto;
+    transform: translate(-50%);
+  }
+}
+
+
+@media (max-width: 550px) {
+  .notifications {
+    
+    bottom: 50px ;
+    left: 50%;    
+    width: 85vw;
+    top: auto;
+    transform: translate(-50%);
+  }
+}

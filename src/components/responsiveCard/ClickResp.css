@@ -1,0 +1,36 @@
+.icon-resp {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+  display: none;
+  .icons {
+    display: flex;
+    width: 18rem;
+    max-width: 100%;
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    outline: 1px solid #555353;
+    box-shadow: 0px 0px 3px;
+    .icon {
+      cursor: pointer;
+    }
+  }
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.521);
+  position: absolute;
+  z-index: 9;
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (max-width: 990px) {
+  .icon-resp {
+    display: block;
+  }
+}
